@@ -32,8 +32,8 @@
 }
 
 [data-theme="dark"]{
-  --primary-color: #e639b0;
-  --secondary-color: #eb55bb;
+  --primary-color: #be8cfe;
+  --secondary-color: #594e76;
   --bg-primary: #17171a;
   --text-color: #ffffff;
   --text-color-two: #222222;
@@ -274,27 +274,45 @@ body {
   margin-bottom: 20rem;
   padding: 1rem;
 }
-
-.about-container {
-  display: block;
-}
-
 .about-me {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 200px;
 }
 
-.about{
-  text-align: center;
+.my-skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
 }
 
-.about, .skills {
+.about {
   width: 100%;
   border: none;
   padding: 1rem;
-  margin-bottom: 20px;
+  text-align: left;
 }
+
+.skills {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+.man img {
+  width: 400px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper spacing */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+
 
 @media (min-width: 769px) {
   .about {
@@ -307,6 +325,12 @@ body {
 }
 
 #ab-me {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem
+}
+
+#sk-me {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem
@@ -400,6 +424,22 @@ body {
   .toggle-icons > img {
     position: absolute;
   }
+
+  .about-me,
+  .my-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me .about,
+  .my-skills .skills {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+
+  .about-me .man,
+  .my-skills .man {
+    margin-top: 20px; /* Adjust as needed */
+  }
 }
 
 @media (max-width: 600px) {
@@ -431,3 +471,11 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
 }
 
+
+
+/* text */
+
+.text-1{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
