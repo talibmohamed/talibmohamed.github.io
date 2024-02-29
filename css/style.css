@@ -401,6 +401,13 @@ body {
   text-align: left;
 }
 
+.contact {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+}
+
 
 .man img {
   width: 400px; /* Set the width of the image */
@@ -503,6 +510,10 @@ body {
   }
 
   .skills {
+    width: 49%;
+  }
+
+  .contact {
     width: 49%;
   }
 }
@@ -623,14 +634,25 @@ body {
 
 
   .about-me .about,
-  .my-skills .skills {
+  .my-skills .skills
+  .contact-me .contact {
     margin-bottom: 20px; /* Adjust as needed */
   }
 
   .about-me .man,
-  .my-skills .man {
-    margin-top: 20px; /* Adjust as needed */
+  .my-skills .man,
+  .contact-me .man {
+    display: none;
+    margin-top: 20px;
     width: 100%;
+  }
+
+  .contact-links{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
 }
 
