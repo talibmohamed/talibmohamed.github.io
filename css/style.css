@@ -19,6 +19,7 @@
   --bg-secondary-two: #111111;
   --footer-color: black;
   --player-color: rgba(27, 64, 45, 0.089);
+  --linux-background: rgba(23, 23, 26, 0.1);
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
@@ -45,6 +46,7 @@
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
   --footer-color: white;
   --player-color: rgba(17, 183, 86, 0.089);
+  --linux-background: rgba(245, 245, 245, 0.1);
 }
 
 [data-theme="dark"] .navbar {
@@ -182,7 +184,6 @@ body {
   --tw-text-opacity: 1;
   padding: 20px;
   box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
-  height: 100px;
   width: 335px; /* Adjust width as needed */
   border-radius: 50px 0 0 50px;
 }
@@ -190,6 +191,20 @@ body {
 .song {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+
+.cover {
+  flex: none; /* This div will not grow or shrink */
+}
+
+.song-details {
+  flex: 1; /* This div will take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  margin-left: 10px;
+  overflow: hidden; /* Ensure content does not overflow */
 }
 
 .song img {
@@ -200,37 +215,9 @@ body {
   margin-right: 10px;
 }
 
-.song-details {
-  overflow: hidden;
-}
 
 
-.song-title {
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -moz-animation: my-animation 15s linear infinite;
-  -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 15s linear infinite;
-}
-
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
+/* About section */
 .profile-image {
   width: 150px;
   border-radius: 50%;
@@ -377,7 +364,12 @@ body {
   padding: 1rem;
 }
 
-.about-me,
+.about-me{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 230px;
+}
 .contact-me,
 .my-skills {
   width: 100%;
@@ -422,8 +414,6 @@ body {
   display: block; /* Ensure proper spacing */
   margin: 0 auto; /* Center the image horizontally */
   animation: bounce 1s infinite alternate;
-
-
 }
 
 
@@ -501,8 +491,11 @@ body {
   color: rgb(48 188 241 / var(--tw-text-opacity));
 }
 
-
-
+.linux {
+  background-color: var(--linux-background);
+  --tw-text-opacity: 1;
+  color: rgba(var(--primary-color), var(--tw-text-opacity));
+}
 
 @media (min-width: 769px) {
   .about {

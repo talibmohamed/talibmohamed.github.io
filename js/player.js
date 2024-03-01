@@ -48,22 +48,19 @@ const displayNowPlaying = async () => {
             const artistLink = album.artists[0].external_urls.spotify;
             const songInfo = document.getElementById('song-info');
             songInfo.innerHTML = `
-                <div class="song">
-                    <div style=" padding-bottom: 0px;">
+                <div class="song container">
+                    <div class="cover" style=" padding-bottom: 0px;">
                         <a href="${item.external_urls.spotify}" target="_blank" ><img src="${album.images[0].url}" style="width: 50px; border-radius: 50%; "></a> 
                     </div>
-                    <div class="song-details" style="margin-left: 10px; display: flex; flex-direction: column;">
+                    <div class="song-details container" style="margin-left: 10px; display: flex;">
                         <h4 id="playing-title" style="flex: none;">Now Playing on spotify:</h4>
-                        <div style="flex: none; display: flex; align-items: center; width=100%">
-                            <a href="${item.external_urls.spotify}" style="font-size: 0.95rem; width=100%;" target="_blank" class="song-title">${name}</a>
+                        <div style="flex: none; display: flex; flex-direction: column;">
+                            <a href="${item.external_urls.spotify}" style="font-size: 0.95rem; width: fit-content;" target="_blank" class="song-title">${name}</a>
                         </div>
                         <a href="${artistLink}" target="_blank" style="font-size: 0.8rem;">by ${artistName}</a>
                     </div>
                 </div>
             `;
-        } else {
-            const songInfo = document.getElementById('song-info');
-            songInfo.innerHTML = 'Nothing is currently playing.';
         }
     } catch (error) {
         console.error('Error fetching now playing:', error);

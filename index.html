@@ -154,7 +154,6 @@
         >
       </section>
     </header>
-
     <div id="about me" class="about-container container">
       <div class="about-me">
         <div class="about">
@@ -190,7 +189,6 @@
             <p class="text-1">Don't let my beginner status fool you. I may not be a coding wizard yet, but I'm on a journey to become one. Check out my budding skills listed below; you might find them pretty interesting.</p>
             
             <p class="text-1">Let's embark on this coding adventure together! <span>🚀</span></p>
-            <p class="text-1">Languages I can speak:</p>
           </span>
           <div class="skills-container">
             <div class="skill html">
@@ -213,13 +211,17 @@
               <img width="27" src="assets/C-svgrepo-com.svg" alt="C-logo">
               <span class="logo-C">C</span>
             </div>
+            <div class="skill sql">
+              <img width="25" src="assets/SQL-lang-svgrepo-com.svg" alt="python-sql">
+              <span class="logo-sql">SQL</span>
+            </div>
             <div class="skill python">
               <img width="25" src="assets/python-svgrepo-com.svg" alt="python-logo">
               <span class="logo-python">Python</span>
             </div>
-            <div class="skill sql">
-              <img width="25" src="assets/SQL-lang-svgrepo-com.svg" alt="python-sql">
-              <span class="logo-sql">SQL</span>
+            <div class="skill linux">
+              <img width="25" src="assets/linux-svgrepo-com.svg" alt="linux-logo">
+              <span class="logo-linux">Linux / bash</span>
             </div>
             <div class="skill R">
               <img width="25" src="assets/R-svgrepo-com.svg" alt="R-logo">
@@ -294,38 +296,22 @@
     <script src="js/script.js"></script>
     <script src="js/player.js"></script>
     <script>
-      var names = ['Mohamed', 'Med', 'Simo'];
-      var index = 0;
-      var nameElement = document.getElementById('name');
-      var currentName = '';
+      const skillsContainer = document.querySelector('.skills-container');
+      const skills = document.querySelectorAll('.skill');
     
-      function typeWriter() {
-        if (index >= names.length) {
-          index = 0;
-        }
-        var nextName = names[index];
-        if (currentName.length < nextName.length) {
-          currentName += nextName[currentName.length];
-          nameElement.textContent = currentName;
-          setTimeout(typeWriter, 150); // Adjust typing speed (milliseconds)
-        } else {
-          setTimeout(deleteWriter, 1000); // Wait before deleting
-        }
-      }
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
     
-      function deleteWriter() {
-        if (currentName.length > 0) {
-          currentName = currentName.slice(0, -1);
-          nameElement.textContent = currentName;
-          setTimeout(deleteWriter, 50); // Adjust deleting speed (milliseconds)
-        } else {
-          index++;
-          setTimeout(typeWriter, 500); // Wait before typing the next name
-        }
-      }
-    
-      // Start the typing effect
-      typeWriter();
+      skills.forEach(skill => {
+        observer.observe(skill);
+      });
+    </script>
     </script>
   </body>
 </html>
