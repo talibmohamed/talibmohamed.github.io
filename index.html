@@ -16,7 +16,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://medtalib.tech/"
+      content="https://github.com/talibmohamed/mohamed.github.io"
     />
     <meta property="og:title" content="Mohamed personal portfolio" />
     <meta
@@ -32,7 +32,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://medtalib.tech/"
+      content="https://github.com/talibmohamed/mohamed.github.io"
     />
     <meta property="twitter:title" content="Mohamed personal portfolio" />
     <meta
@@ -84,6 +84,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+
   </head>
   <body>
     <div id="player" class="player">
@@ -191,39 +192,39 @@
             <p class="text-1">Let's embark on this coding adventure together! <span>🚀</span></p>
           </span>
           <div class="skills-container">
-            <div class="skill html">
+            <div class="skill html hidden">
               <img width="25" src="assets/html-svgrepo-com.svg" alt="html-logo">
               <span class="logo-html">HTML</span>
             </div>
-            <div class="skill css">
+            <div class="skill css hidden">
               <img width="25" src="assets/css-3-svgrepo-com.svg" alt="css-logo">
               <span class="logo-css">CSS</span>
             </div>
-            <div class="skill js">
+            <div class="skill js hidden">
               <img width="25" src="assets/javascript-1-svgrepo-com.svg" alt="js-logo">
               <span class="logo-javascript">JavaScript</span>
             </div>
-            <div class="skill java">
+            <div class="skill java hidden">
               <img width="25" src="assets/java-svgrepo-com.svg" alt="java-logo">
               <span class="logo-java">Java</span>
             </div>
-            <div class="skill C">
+            <div class="skill C hidden">
               <img width="27" src="assets/C-svgrepo-com.svg" alt="C-logo">
               <span class="logo-C">C</span>
             </div>
-            <div class="skill sql">
+            <div class="skill sql hidden">
               <img width="25" src="assets/SQL-lang-svgrepo-com.svg" alt="python-sql">
               <span class="logo-sql">SQL</span>
             </div>
-            <div class="skill python">
+            <div class="skill python hidden">
               <img width="25" src="assets/python-svgrepo-com.svg" alt="python-logo">
               <span class="logo-python">Python</span>
             </div>
-            <div class="skill linux">
+            <div class="skill linux hidden">
               <img width="25" src="assets/linux-svgrepo-com.svg" alt="linux-logo">
               <span class="logo-linux">Linux / bash</span>
             </div>
-            <div class="skill R">
+            <div class="skill R hidden">
               <img width="25" src="assets/R-svgrepo-com.svg" alt="R-logo">
               <span class="logo-java">R</span>
             </div>
@@ -247,11 +248,25 @@
               <p>R, Rshyny, Css</p>
             </div>
             <div class="project-link">
-              <a href="https://github.com/talibmohamed/Climate-Data-Analysis-App" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/talibmohamed/Climate-Data-Analysis-App" target="_blank" ><i class="fab fa-github git-project"></i></a>
               <a href="https://medt.shinyapps.io/evaluation-simulations-climatique/" target="_blank"><i class="fas fa-globe"></i></a>
             </div>
           </div>
         </div>
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>This portfolio </h3>
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/talibmohamed/" target="_blank"><i class="fab fa-github git-project"></i></a>
+              <a href="https://medtalib.tech" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+
     </section>
     <div id="contact" class="about-container container">
       <div class="contact-me">
@@ -296,24 +311,6 @@
     <script src="js/script.js"></script>
     <script src="js/player.js"></script>
     <script src="js/typing.js"></script>
-
-    <script>
-      const skillsContainer = document.querySelector('.skills-container');
-      const skills = document.querySelectorAll('.skill');
-    
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
-    
-      skills.forEach(skill => {
-        observer.observe(skill);
-      });
-    </script>
-    </script>
+    <script defer src="js/icons.js"></script>
   </body>
 </html>
