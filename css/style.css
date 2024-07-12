@@ -501,6 +501,61 @@ body {
   color: rgba(var(--primary-color), var(--tw-text-opacity));
 }
 
+.php {
+  /* rgb(79, 91, 147) */
+  background-color: 
+    rgba(79, 91, 147, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(79, 91, 147, var(--tw-text-opacity));
+}
+
+/* git */
+.git {
+  background-color: rgba(237, 61, 48, .1);
+  --tw-text-opacity: 1;
+  color: rgba(237, 61, 48, var(--tw-text-opacity));
+}
+
+/* oracle */
+.oracle {
+  background-color: rgba(234,27,34, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(234, 27, 34, var(--tw-text-opacity));
+}
+
+/* react */
+.react {
+  background-color: rgba(97, 218, 251, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(97, 218, 251, var(--tw-text-opacity));
+}
+
+/* bootstrap */
+.bootstrap {
+  /* rgb(86,61,124) */
+  background-color:
+    rgba(86, 61, 124, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(86, 61, 124, var(--tw-text-opacity));
+}
+
+/* tailwind */
+.tailwind {
+  /* rgb(68,168,179) */
+  background-color:
+    rgba(68, 168, 179, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(68, 168, 179, var(--tw-text-opacity));
+}
+
+/* postgresql */
+.postgresql {
+	background-color:rgba(51, 103, 145, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(51, 103, 145, var(--tw-text-opacity));
+}
+
+
 .hidden {
   opacity: 0;
   transform: translateX(-100%);
@@ -513,41 +568,7 @@ body {
 }
 
 /* Set transition delay for each skill */
-.skill:nth-child(1) {
-  transition-delay: 0.15s; /* Show with a delay of 0.15s */
-}
 
-.skill:nth-child(2) {
-  transition-delay: 0.3s; /* Show with a delay of 0.3s */
-}
-
-.skill:nth-child(3) {
-  transition-delay: 0.45s; /* Show with a delay of 0.45s */
-}
-
-.skill:nth-child(4) {
-  transition-delay: 0.6s; /* Show with a delay of 0.6s */
-}
-
-.skill:nth-child(5) {
-  transition-delay: 0.75s; /* Show with a delay of 0.75s */
-}
-
-.skill:nth-child(6) {
-  transition-delay: 0.9s; /* Show with a delay of 0.9s */
-}
-
-.skill:nth-child(7) {
-  transition-delay: 1.05s; /* Show with a delay of 1.05s */
-}
-
-.skill:nth-child(8) {
-  transition-delay: 1.2s; /* Show with a delay of 1.2s */
-} 
-
-.skill:nth-child(9) {
-  transition-delay: 1.35s; /* Show with a delay of 1.35s */
-}
 
 
 @media (min-width: 769px) {
