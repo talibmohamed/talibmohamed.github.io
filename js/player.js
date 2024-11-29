@@ -1,1 +1,87 @@
-function _0x3db6(){const _0x5636d7=['song-info','169700MJTtGT','artists','https://api.spotify.com/v1/me/player/currently-playing','spotify','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22song\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22assets/spotify-color-svgrepo-com.svg\x22\x20alt=\x22spotify\x20logo\x22\x20style=\x22width:\x2050px;\x20border-radius:\x2050%;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20id=\x22offline-title\x22>Nothing\x20is\x20currently\x20playing.</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22song\x20container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22cover\x22\x20style=\x22\x20padding-bottom:\x200px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22','getElementById','external_urls','\x22\x20target=\x22_blank\x22\x20><img\x20src=\x22','2211471PSXgBM','https://accounts.spotify.com/api/token','126xEkAgI','22750428PaPojo','refresh_token','9619743lceSVM','json','171540nOUZrq','POST','099161de866c4da8a6e971654ea8aa0c','186aQQmwH','14806TDYnId','\x22\x20style=\x22width:\x2050px;\x20border-radius:\x2050%;\x20\x22></a>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22song-details\x20container\x22\x20style=\x22margin-left:\x2010px;\x20display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20id=\x22playing-title\x22\x20style=\x22flex:\x20none;\x22>Now\x20Playing\x20on\x20spotify:</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22flex:\x20none;\x20display:\x20flex;\x20flex-direction:\x20column;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22','40VNERmJ','307251SblwyU','44ChPOWy','images','ce970393ed3e47039cbec3fa18cd396c','error','Bearer\x20','form','AQDrfh-bIEKWoc8EJEOuCbtmLGMsFVEKN-_m434gDJJwk05yeaEpHAV_AIuhkOox2UkHoAmKzZPdqMGH9GiCZyAAUBvzNuW40S2CDS888ujULZbOyBm6IE7cSwgbEdoKgfI','22dbGebQ'];_0x3db6=function(){return _0x5636d7;};return _0x3db6();}function _0x347e(_0x23dd08,_0x58d30f){const _0x3db645=_0x3db6();return _0x347e=function(_0x347ece,_0x3d5294){_0x347ece=_0x347ece-0x72;let _0x10c145=_0x3db645[_0x347ece];return _0x10c145;},_0x347e(_0x23dd08,_0x58d30f);}const _0x431de5=_0x347e;(function(_0x5d79f6,_0x351c27){const _0x2f2755=_0x347e,_0x16a53e=_0x5d79f6();while(!![]){try{const _0x4371a8=parseInt(_0x2f2755(0x8c))/0x1*(parseInt(_0x2f2755(0x74))/0x2)+parseInt(_0x2f2755(0x77))/0x3*(-parseInt(_0x2f2755(0x78))/0x4)+-parseInt(_0x2f2755(0x91))/0x5*(parseInt(_0x2f2755(0x73))/0x6)+parseInt(_0x2f2755(0x8f))/0x7+-parseInt(_0x2f2755(0x76))/0x8*(parseInt(_0x2f2755(0x8a))/0x9)+-parseInt(_0x2f2755(0x81))/0xa*(parseInt(_0x2f2755(0x7f))/0xb)+parseInt(_0x2f2755(0x8d))/0xc;if(_0x4371a8===_0x351c27)break;else _0x16a53e['push'](_0x16a53e['shift']());}catch(_0x5d9006){_0x16a53e['push'](_0x16a53e['shift']());}}}(_0x3db6,0xb7292));const client_id=_0x431de5(0x7a),client_secret=_0x431de5(0x72),refresh_token=_0x431de5(0x7e);let lastPlayedItem=null;const authOptions={'url':_0x431de5(0x8b),'headers':{'Authorization':'Basic\x20'+btoa(client_id+':'+client_secret)},'form':{'grant_type':_0x431de5(0x8e),'refresh_token':refresh_token},'json':!![]},getAccessToken=async()=>{const _0x4f65e8=_0x431de5,_0x1ce863=await fetch(_0x4f65e8(0x8b),{'method':_0x4f65e8(0x92),'headers':{'Authorization':'Basic\x20'+btoa(client_id+':'+client_secret)},'body':new URLSearchParams(authOptions[_0x4f65e8(0x7d)])}),{access_token:_0xd7af94,expires_in:_0x962b9c}=await _0x1ce863[_0x4f65e8(0x90)]();return{'access_token':_0xd7af94,'expires_in':_0x962b9c};},getNowPlaying=async()=>{const _0x79aa71=_0x431de5,{access_token:_0x370f8b}=await getAccessToken(),_0x545494=await fetch(_0x79aa71(0x83),{'headers':{'Authorization':_0x79aa71(0x7c)+_0x370f8b}}),{item:_0x45efdb}=await _0x545494[_0x79aa71(0x90)]();return _0x45efdb;},displayNowPlaying=async()=>{const _0x38fa76=_0x431de5;try{const _0x256fde=await getNowPlaying();if(_0x256fde){const {name:_0x1fb73a,album:_0x4b1038}=_0x256fde,{name:_0x342c12}=_0x4b1038[_0x38fa76(0x82)][0x0],_0xf57036=_0x4b1038[_0x38fa76(0x82)][0x0][_0x38fa76(0x88)][_0x38fa76(0x84)],_0x4c0757=document[_0x38fa76(0x87)](_0x38fa76(0x80));_0x4c0757['innerHTML']=_0x38fa76(0x86)+_0x256fde[_0x38fa76(0x88)][_0x38fa76(0x84)]+_0x38fa76(0x89)+_0x4b1038[_0x38fa76(0x79)][0x0]['url']+_0x38fa76(0x75)+_0x256fde[_0x38fa76(0x88)][_0x38fa76(0x84)]+'\x22\x20style=\x22font-size:\x200.95rem;\x20width:\x20fit-content;\x22\x20target=\x22_blank\x22\x20class=\x22song-title\x22>'+_0x1fb73a+'</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22'+_0xf57036+'\x22\x20target=\x22_blank\x22\x20style=\x22font-size:\x200.8rem;\x22>by\x20'+_0x342c12+'</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';}}catch(_0x574765){console[_0x38fa76(0x7b)]('Error\x20fetching\x20now\x20playing:',_0x574765);const _0x24fb12=document[_0x38fa76(0x87)]('song-info');_0x24fb12['innerHTML']=_0x38fa76(0x85);}};displayNowPlaying();
+const clientId = '099161de866c4da8a6e971654ea8aa0c';
+const clientSecret = 'ce970393ed3e47039cbec3fa18cd396c';
+const refreshToken = 'AQDrfh-bIEKWoc8EJEOuCbtmLGMsFVEKN-_m434gDJJwk05yeaEpHAV_AIuhkOox2UkHoAmKzZPdqMGH9GiCZyAAUBvzNuW40S2CDS888ujULZbOyBm6IE7cSwgbEdoKgfI';
+let lastPlayedItem = null;
+
+const authOptions = {
+    url: 'https://accounts.spotify.com/api/token',
+    headers: {
+        Authorization: 'Basic ' + btoa(`${clientId}:${clientSecret}`)
+    },
+    form: {
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken
+    },
+    json: true
+};
+
+// Function to get a new access token
+const getAccessToken = async () => {
+    const response = await fetch(authOptions.url, {
+        method: 'POST',
+        headers: {
+            Authorization: 'Basic ' + btoa(`${clientId}:${clientSecret}`)
+        },
+        body: new URLSearchParams(authOptions.form)
+    });
+
+    const { access_token: accessToken, expires_in: expiresIn } = await response.json();
+    return { accessToken, expiresIn };
+};
+
+// Function to fetch currently playing track
+const getNowPlaying = async () => {
+    const { accessToken } = await getAccessToken();
+    const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
+        headers: {
+            Authorization: `Bearer ${accessToken}`
+        }
+    });
+
+    const { item } = await response.json();
+    return item;
+};
+
+// Function to display currently playing track on the webpage
+const displayNowPlaying = async () => {
+    try {
+        const nowPlaying = await getNowPlaying();
+        const songInfoElement = document.getElementById('song-info');
+
+        if (nowPlaying) {
+            const { name: songName, album } = nowPlaying;
+            const { name: artistName } = album.artists[0];
+            const artistLink = album.artists[0].external_urls.spotify;
+            const albumCover = album.images[0].url;
+
+            songInfoElement.innerHTML = `
+                <div class="song container">
+                    <div class="cover" style="padding-bottom: 0px;">
+                        <a href="${album.external_urls.spotify}" target="_blank">
+                            <img src="${albumCover}" style="width: 50px; border-radius: 50%;">
+                        </a>
+                    </div>
+                    <div class="song-details container" style="margin-left: 10px; display: flex;">
+                        <h4 id="playing-title" style="flex: none;">Now Playing on Spotify:</h4>
+                        <div style="flex: none; display: flex; flex-direction: column;">
+                            <a href="${album.external_urls.spotify}" target="_blank" class="song-title" style="font-size: 0.95rem; width: fit-content;">${songName}</a>
+                            <a href="${artistLink}" target="_blank" style="font-size: 0.8rem;">by ${artistName}</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        } else {
+            songInfoElement.innerHTML = `
+                <div class="song">
+                    <img src="assets/spotify-color-svgrepo-com.svg" alt="spotify logo" style="width: 50px; border-radius: 50%;">
+                    <h4 id="offline-title">Nothing is currently playing.</h4>
+                </div>
+            `;
+        }
+    } catch (error) {
+        console.error('Error fetching the currently playing track:', error);
+    }
+};
+
+// Call the function to display the currently playing track
+displayNowPlaying();
