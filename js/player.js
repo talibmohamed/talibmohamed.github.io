@@ -1,7 +1,6 @@
-const clientId = '099161de866c4da8a6e971654ea8aa0c';
-const clientSecret = 'ce970393ed3e47039cbec3fa18cd396c';
-const refreshToken = 'AQDrfh-bIEKWoc8EJEOuCbtmLGMsFVEKN-_m434gDJJwk05yeaEpHAV_AIuhkOox2UkHoAmKzZPdqMGH9GiCZyAAUBvzNuW40S2CDS888ujULZbOyBm6IE7cSwgbEdoKgfI';
-let lastPlayedItem = null;
+const clientId = 'ce970393ed3e47039cbec3fa18cd396c';
+const clientSecret = '7b47c120683748bbaa4ddb556b45b7ee';
+const refreshToken = 'AQCcAPNjJKKx0f5UyuLN3WyFOQ69a0HpHx5tdIY5PWCWVsV5g9I_njuPkFaF5453C8yQHpF0w8WTOsG2-gwhpe31fYZwNw74DnW_pgJMGbGZJ_icuhJ_t2b5oyYRXyv5ti0';
 
 const authOptions = {
     url: 'https://accounts.spotify.com/api/token',
@@ -11,35 +10,56 @@ const authOptions = {
     form: {
         grant_type: 'refresh_token',
         refresh_token: refreshToken
-    },
-    json: true
+    }
 };
 
 // Function to get a new access token
 const getAccessToken = async () => {
-    const response = await fetch(authOptions.url, {
-        method: 'POST',
-        headers: {
-            Authorization: 'Basic ' + btoa(`${clientId}:${clientSecret}`)
-        },
-        body: new URLSearchParams(authOptions.form)
-    });
+    try {
+        const response = await fetch(authOptions.url, {
+            method: 'POST',
+            headers: {
+                Authorization: authOptions.headers.Authorization,
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams(authOptions.form)
+        });
 
-    const { access_token: accessToken, expires_in: expiresIn } = await response.json();
-    return { accessToken, expiresIn };
+        if (!response.ok) {
+            throw new Error(`Failed to get access token: ${response.status}`);
+        }
+
+        const { access_token: accessToken, expires_in: expiresIn } = await response.json();
+        return { accessToken, expiresIn };
+    } catch (error) {
+        console.error('Error fetching access token:', error);
+        return null;
+    }
 };
 
 // Function to fetch currently playing track
 const getNowPlaying = async () => {
-    const { accessToken } = await getAccessToken();
-    const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
-        headers: {
-            Authorization: `Bearer ${accessToken}`
-        }
-    });
+    try {
+        const tokenData = await getAccessToken();
+        if (!tokenData) return null;
 
-    const { item } = await response.json();
-    return item;
+        const { accessToken } = tokenData;
+        const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
+            headers: {
+                Authorization: `Bearer ${accessToken}`
+            }
+        });
+
+        if (!response.ok) {
+            console.warn('No currently playing track or unauthorized.');
+            return null;
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching the currently playing track:', error);
+        return null;
+    }
 };
 
 // Function to display currently playing track on the webpage
@@ -48,11 +68,16 @@ const displayNowPlaying = async () => {
         const nowPlaying = await getNowPlaying();
         const songInfoElement = document.getElementById('song-info');
 
-        if (nowPlaying) {
-            const { name: songName, album } = nowPlaying;
-            const { name: artistName } = album.artists[0];
-            const artistLink = album.artists[0].external_urls.spotify;
-            const albumCover = album.images[0].url;
+        if (!songInfoElement) {
+            console.error('Element with ID "song-info" not found.');
+            return;
+        }
+
+        if (nowPlaying && nowPlaying.item) {
+            const { name: songName, album } = nowPlaying.item;
+            const { name: artistName } = album.artists[0] || {};
+            const artistLink = album.artists[0]?.external_urls.spotify || '#';
+            const albumCover = album.images[0]?.url || 'default-image.jpg';
 
             songInfoElement.innerHTML = `
                 <div class="song container">
@@ -79,7 +104,7 @@ const displayNowPlaying = async () => {
             `;
         }
     } catch (error) {
-        console.error('Error fetching the currently playing track:', error);
+        console.error('Error displaying the currently playing track:', error);
     }
 };
 
