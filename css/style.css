@@ -555,6 +555,11 @@ body {
   color: rgba(51, 103, 145, var(--tw-text-opacity));
 }
 
+.csharp{
+  background-color: rgba(127, 58, 133, 0.1);
+  --tw-text-opacity: 1;
+  color: rgba(127, 58, 133, var(--tw-text-opacity));
+}
 
 .hidden {
   opacity: 0;
